@@ -1,61 +1,60 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal do Aluno - ONG</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body class="bg-light">
+<section id="investimento" class="mb-5">
+            <div class="p-5 bg-white rounded shadow-lg border border-primary">
+                <h2 class="text-center mb-4 text-primary fw-bold"><i class="fas fa-file-invoice-dollar"></i> Proposta Financeira</h2>
+                <p class="text-center text-muted mb-5">Infraestrutura de alta performance com custos otimizados.</p>
 
-    <div class="container d-flex justify-content-center align-items-center vh-100">
-        <div class="card shadow-lg p-4" style="max-width: 400px; width: 100%;">
-            <div class="text-center mb-4">
-                <i class="fas fa-graduation-cap fa-3x text-primary"></i>
-                <h3 class="mt-2">Área do Responsável</h3>
-                <p class="text-muted">Consulte frequência e notas sem senha.</p>
-            </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-8 mb-4">
+                        <div class="price-card card h-100 shadow border-success">
+                            <div class="price-header bg-monthly">
+                                <h4>Custo Operacional Mensal</h4>
+                                <small>(Infraestrutura + Ferramentas)</small>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <i class="fas fa-robot text-primary me-2"></i>
+                                            <span>Agente de IA (Codificação/Manutenção)</span>
+                                        </div>
+                                        <strong>R$ 120,00</strong>
+                                    </li>
+                                    
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <i class="fas fa-server text-primary me-2"></i>
+                                            <span>Servidor VPS NVMe (8GB RAM / 4 vCPU)</span>
+                                            <div class="text-muted small" style="font-size: 0.8em;">
+                                                *Valor referente ao plano trienal (3 anos).
+                                            </div>
+                                        </div>
+                                        <strong>R$ 45,49</strong>
+                                    </li>
 
-            <form id="formPais">
-                <div class="mb-3">
-                    <label for="rg" class="form-label">RG do Aluno</label>
-                    <input type="text" class="form-control" id="rg" placeholder="Ex: 12.345.678-9" required>
-                </div>
-                <div class="mb-3">
-                    <label for="nascimento" class="form-label">Data de Nascimento</label>
-                    <input type="date" class="form-control" id="nascimento" required>
-                </div>
-                <button type="submit" class="btn btn-primary w-100">Consultar Dados</button>
-            </form>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <i class="fas fa-cloud-upload-alt text-primary me-2"></i>
+                                            <span>Backup em Nuvem Externa (Segurança)</span>
+                                            <div class="text-muted small mt-1" style="font-size: 0.85em; line-height: 1.2;">
+                                                <strong>Motivo:</strong> Caso o servidor principal sofra uma falha física ou ataque, os dados dos alunos estarão salvos em um local diferente (Google/AWS), garantindo recuperação imediata.
+                                            </div>
+                                        </div>
+                                        <strong>R$ 25,00</strong>
+                                    </li>
 
-            <div id="resultado" class="mt-4 d-none border-top pt-3">
-                <h5 class="text-success"><i class="fas fa-user-check"></i> Emily Vitória</h5>
-                <div class="card bg-light mb-2">
-                    <div class="card-body p-2">
-                        <strong>Oficina de Violão</strong><br>
-                        <small>Frequência: <span class="badge bg-success">95%</span></small><br>
-                        <small>Última Nota: 9.0</small>
+                                    <li class="list-group-item bg-light d-flex justify-content-between fs-4 mt-3 text-success border-top">
+                                        <strong>TOTAL MENSAL</strong>
+                                        <strong>R$ 190,49</strong>
+                                    </li>
+                                </ul>
+                                
+                                <div class="alert alert-info mt-4 small">
+                                    <i class="fas fa-info-circle"></i> 
+                                    <strong>Nota:</strong> A definição de custos sobre mão de obra humana para suporte será discutida posteriormente, após a aprovação e entrega do serviço funcional.
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="card bg-light">
-                    <div class="card-body p-2">
-                        <strong>Informática</strong><br>
-                        <small>Frequência: <span class="badge bg-warning">70%</span></small><br>
-                        <small>Última Nota: Pendente</small>
-                    </div>
-                </div>
             </div>
-        </div>
-    </div>
-
-    <script>
-        // Simples script para mostrar o resultado ao clicar (apenas visual)
-        document.getElementById('formPais').addEventListener('submit', function(e){
-            e.preventDefault();
-            document.getElementById('resultado').classList.remove('d-none');
-        });
-    </script>
-</body>
-</html>
+        </section>
