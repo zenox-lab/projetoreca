@@ -1,0 +1,38 @@
+/* Fundo geral */
+body {
+    background-color: #f4f6f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card do Login dos Pais */
+.card {
+    border: none;
+    border-radius: 12px;
+}
+
+/* Ajustes na Tabela */
+.table th {
+    font-weight: 600;
+    color: #495057;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+/* Badge de Lotação */
+.card-header .badge {
+    font-size: 0.8em;
+    align-self: center;
+}
+
+/* Botões */
+.btn-primary {
+    background-color: #0d6efd;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
