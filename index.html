@@ -10,6 +10,7 @@
     <style>
         body { font-family: 'Segoe UI', sans-serif; background-color: #f8f9fa; color: #333; }
         
+        /* Estilo da Hero Section */
         .hero {
             background: linear-gradient(135deg, #0d6efd 0%, #0043a8 100%);
             color: white;
@@ -17,6 +18,7 @@
             margin-bottom: 40px;
         }
 
+        /* Mockup (Simulação de Janela de Sistema) */
         .mockup-window {
             background: white;
             border-radius: 10px;
@@ -45,14 +47,17 @@
             color: #0043a8;
         }
 
+        /* Card de Investimento */
         .price-card {
             border: none;
             transition: transform 0.3s;
         }
         .price-card:hover { transform: translateY(-5px); }
         .price-header { padding: 20px; text-align: center; color: white; border-radius: 10px 10px 0 0; }
+        .bg-setup { background-color: #6c757d; }
         .bg-monthly { background-color: #198754; }
 
+        /* Timeline Cronograma */
         .timeline-item {
             padding: 20px;
             border-left: 3px solid #0d6efd;
@@ -222,7 +227,7 @@
                         <div class="card-body text-center">
                             <i class="fas fa-server fa-2x text-primary mb-3"></i>
                             <h5>Servidor VPS Dedicado</h5>
-                            <p class="small text-muted">Utilizaremos um servidor otimizado para garantir baixa latência e alta disponibilidade.</p>
+                            <p class="small text-muted">Nada de hospedagem compartilhada lenta. Usaremos um VPS com 4GB de RAM para garantir velocidade.</p>
                         </div>
                     </div>
                 </div>
@@ -230,8 +235,8 @@
                     <div class="card h-100 border-0 shadow-sm">
                         <div class="card-body text-center">
                             <i class="fas fa-robot fa-2x text-primary mb-3"></i>
-                            <h5>Desenvolvimento Assistido</h5>
-                            <p class="small text-muted">Utilização de tecnologias modernas para codificação rápida e eficiente.</p>
+                            <h5>Desenvolvimento via IA</h5>
+                            <p class="small text-muted">Utilização de Agentes de IA para codificação rápida e eficiente, reduzindo o custo de mão de obra humana.</p>
                         </div>
                     </div>
                 </div>
@@ -240,7 +245,7 @@
                         <div class="card-body text-center">
                             <i class="fas fa-database fa-2x text-primary mb-3"></i>
                             <h5>Backups Automáticos</h5>
-                            <p class="small text-muted">Rotina de backup diário para servidor externo, garantindo a integridade dos dados.</p>
+                            <p class="small text-muted">Rotina de backup diário para servidor externo. Seus dados nunca serão perdidos.</p>
                         </div>
                     </div>
                 </div>
@@ -270,10 +275,35 @@
         <section id="investimento" class="mb-5">
             <div class="p-5 bg-white rounded shadow-lg border border-primary">
                 <h2 class="text-center mb-4 text-primary fw-bold"><i class="fas fa-file-invoice-dollar"></i> Proposta Financeira</h2>
-                <p class="text-center text-muted mb-5">Valores baseados em infraestrutura de alto desempenho e manutenção contínua.</p>
+                <p class="text-center text-muted mb-5">Valores realistas baseados em custos de mercado (Hostgator/DigitalOcean) e desenvolvimento assistido por IA.</p>
 
-                <div class="row justify-content-center">
-                    <div class="col-md-8 mb-4">
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="price-card card h-100 shadow">
+                            <div class="price-header bg-setup">
+                                <h4>Investimento Único</h4>
+                                <small>(Implantação do Projeto)</small>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <span>Desenvolvimento (Custo IA)</span>
+                                        <strong>R$ 550,00</strong>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <span>Configuração do Servidor</span>
+                                        <strong>R$ 800,00</strong>
+                                    </li>
+                                    <li class="list-group-item bg-light d-flex justify-content-between fs-5 mt-2">
+                                        <strong>TOTAL IMPLANTAÇÃO</strong>
+                                        <strong>R$ 1.350,00</strong>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
                         <div class="price-card card h-100 shadow border-success">
                             <div class="price-header bg-monthly">
                                 <h4>Custo Mensal</h4>
@@ -282,28 +312,24 @@
                             <div class="card-body">
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item d-flex justify-content-between">
-                                        <span>Custo de IA</span>
-                                        <strong>R$ 120,00</strong>
-                                    </li>
-                                    <li class="list-group-item d-flex justify-content-between">
                                         <span>Servidor VPS (4GB RAM)</span>
-                                        <strong>R$ 46,00</strong>
+                                        <span>R$ 55,00</span>
                                     </li>
                                     <li class="list-group-item d-flex justify-content-between">
                                         <span>Sistema de Backup Externo</span>
-                                        <strong>R$ 50,00</strong>
+                                        <span>R$ 50,00</span>
                                     </li>
                                     <li class="list-group-item d-flex justify-content-between">
-                                        <span>Suporte Técnico/Manutenção</span>
-                                        <strong>R$ 350,00</strong>
+                                        <span></span>
+                                        <span></span>
                                     </li>
                                     <li class="list-group-item bg-light d-flex justify-content-between fs-5 mt-2 text-success">
                                         <strong>TOTAL MENSAL</strong>
-                                        <strong>R$ 566,00</strong>
+                                        <strong>R$ 120</strong>
                                     </li>
                                 </ul>
                                 <div class="alert alert-warning mt-3 small">
-                                    <i class="fas fa-exclamation-triangle"></i> <strong>Nota:</strong> O domínio (.org.br) custa aprox. R$ 80,00/ano (geralmente grátis no 1º ano do servidor).
+                                    <i class="fas fa-exclamation-triangle"></i> <strong>Nota:</strong> 
                                 </div>
                             </div>
                         </div>
@@ -322,6 +348,7 @@
     </footer>
 
     <script>
+        // 1. Script da Busca Rápida (Professor)
         function demoFiltrar() {
             var input = document.getElementById("demoBusca");
             var filter = input.value.toUpperCase();
@@ -341,9 +368,13 @@
             }
         }
 
+        // 2. Script da Área dos Pais (Simulação de Login)
         function demoLogin() {
+            // Esconde o form e mostra o resultado
             document.getElementById('demoLoginArea').classList.add('d-none');
             document.getElementById('demoResultado').classList.remove('d-none');
+            // Animação simples de fade in
+            document.getElementById('demoResultado').classList.add('fade-in');
         }
 
         function demoReset() {
